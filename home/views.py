@@ -10,5 +10,5 @@ def about_view(request):
     return render(request, template_name)
 
 def projects_view(request):
-    template_name = "projects2.html"
+    template_name = "projects.html"
     return render(request, template_name)
