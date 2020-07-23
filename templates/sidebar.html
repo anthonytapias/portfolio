@@ -1,0 +1,37 @@
+{% block sidebar %}
+
+<style>
+        .card{
+            box-shadow: 0 16px 48px #E3E7EB;
+        }
+
+</style>
+
+<!-- Sidebar Widgets Column -->
+<div class="col-md-4 float-right ">
+<div class="card my-4">
+        <h5 class="card-header">About Me</h5>
+    <div class="card-body">
+        <p class="card-text"> I'm Anthony Tapias and I am a Full Stack Software Developer. I am proficient in </p>
+        <!-- <p>Python</p>
+        <p>Java</p>
+        <p>Django/Flask</p>
+        <p>Spring Boot</p>
+        <p>HTML, CSS, React</p>
+        <p>AWS</p> -->
+
+        <ul>
+         <li>Python</li>
+         <li>Java</li>
+         <li>Django/Flask</li>
+         <li>Spring Boot</li>
+         <li>Html, CSS, React</li>
+         <li>AWS</li>
+        </ul>
+        <a href="{% url 'about' %}"
+           class="btn btn-danger">Know more!</a>
+    </div>
+</div>
+</div>
+
+{% endblock sidebar %}
