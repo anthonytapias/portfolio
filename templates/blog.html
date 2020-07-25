@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<style>
+    body {
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        background-color: #1f4068 ;
+    }
+
+    .head_text {
+        color: white;
+    }
+
+    .card {
+        box-shadow: 0 16px 48px #E3E7EB;
+    }
+</style>
+
+<link href="{% static 'temp/css/projects.css'%}" rel="stylesheet">
+<section class="jumbotron text-center">
+  <div class="container">
+    <h1>Anthony's Blog</h1>
+    <p class="lead text-muted">Created on a Django Application</p>
+
+
+
+  </div>
+</section>
+
+
+<section class="site-section block__45439">
+  <div class="container">
+
+
+
+    <div class="row">
+<!-- blog entries -->
+        <div class="col-md-6 col-lg-6 mb-4">
+        {% for post in post_list %}
+        <div class="block__86547 d-block d-xl-flex align-items-stretch">
+          <figure class="img" style="background-image: url({% static 'temp/images/blog.jpg' %})">
+          </figure>
+          <div class="h-100">
+            <h3 class="mb-4"><a href="{% url 'post_detail' post.slug  %}">{{ post.title }}</a></h3>
+            <div class="block__27192 d-flex pt-1 border-top">
+              <a href="{% url 'post_detail' post.slug  %}"><span class="icon-person"></span>{{ post.author }} | {{ post.created_on}} </a>
+              <a href="{% url 'post_detail' post.slug  %}"><span class="icon-calendar-o"></span> 7 Apr 2019</a>
+
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+          {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- <div class="container">
+    <div class="row"> -->
+        <!-- Blog Entries Column -->
+        <!-- <div class="col-md-6 col-lg-6 mb-4">
+            {% for post in post_list %}
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title">{{ post.title }}</h2>
+                    <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
+                    <p class="card-text">{{post.content|slice:":200" }}</p>
+                    <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</div> -->
+{%endblock%}
