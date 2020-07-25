@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="author" content="Anthony Tapias">
     <meta name="generator" content="Jekyll v4.0.1">
     <title>Projects Page</title>
 
@@ -36,7 +36,7 @@
       }
     </style>
     <!-- Custom styles for this template -->
-    <link href="{% static 'css/album.css'%}" rel="stylesheet">
+    <link href="{% static 'temp/css/projects.css'%}" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -49,15 +49,85 @@
   <section class="jumbotron text-center">
     <div class="container">
       <h1>Projects</h1>
-      <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+      <p class="lead text-muted">Here are some projects that I have worked on.</p>
       <p>
-        <a href="#" class="btn btn-primary my-2">Main call to action</a>
-        <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+        <a href="https://github.com/anthonytapias" class="btn btn-primary btn-large my-2">My Github</a>
+
       </p>
     </div>
   </section>
+  <section class="site-section services-section bg-light block__62849" id="services-section">
+    <div class="container">
+      <!-- <div class="row mb-5">
+        <div class="col-12 text-center" data-aos="fade">
+          <h3 class="section-title-sub text-primary">Our Services</h3>
+          <h2 class="section-title mb-3">Services</h2>
+        </div>
+      </div> -->
+      <div class="row">
+        <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
 
-  <div class="album py-5 bg-light">
+          <a href="https://github.com/anthonytapias/Adverse-Drug-Events-A-Deep-Dive-Into-The-FDA" class="block__16443 text-center d-block">
+            <span class="custom-icon mx-auto"><span class="icon-line-tools d-block"></span></span>
+            <h3>Predict Stock Prices</h3>
+            <p>Built a NLP model to predict the sentiment of financial news articles of a particular company. Then trained a ML model to predict whether the price of a stock will close higher than the opening price of the day based on the sentiment of the news before 12pm.</p>
+          </a>
+
+        </div>
+        <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
+
+          <a href="https://github.com/anthonytapias/ItemCategoryClassifier" class="block__16443 text-center d-block">
+            <span class="custom-icon mx-auto"><span class="icon-line-lightbulb d-block"></span></span>
+            <h3>Predict the Category</h3>
+            <p>Built and trained a machine learning model to predict the category of an app with 83 percent accuracy rate. Scraped category details of an app from google to train the model.</p>
+          </a>
+
+        </div>
+        <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
+
+          <a href="https://github.com/anthonytapias/NYC_311" class="block__16443 text-center d-block">
+            <span class="custom-icon mx-auto"><span class="icon-line-laptop d-block"></span></span>
+            <h3>NYC 311 Calls</h3>
+            <p>Used Open NYC API to query data of all NYC 311 compliants in Queens and ran a regression to predict the number of 311 calls for a neighboor at a certain time of the year.</p>
+          </a>
+
+        </div>
+        <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
+
+          <a href="https://github.com/anthonytapias/Adverse-Drug-Events-A-Deep-Dive-Into-The-FDA" class="block__16443 text-center d-block">
+            <span class="custom-icon mx-auto"><span class="icon-line-search d-block"></span></span>
+            <h3>Flask & Dash App</h3>
+            <p>Built an exploratory web application (via Flask & Dash) that allows users to get information about FDA-regulated drugs (and their reactions)</p>
+          </a>
+
+        </div>
+        <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
+
+          <a href="#" class="block__16443 text-center d-block">
+            <span class="custom-icon mx-auto"><span class="icon-line-presentation d-block"></span></span>
+            <h3>Django App</h3>
+            <p>Built Django application with blog posts. Technologies used are python, django, sql, css, html, jquery. </p>
+          </a>
+
+        </div>
+        <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
+
+          <a href="#" class="block__16443 text-center d-block">
+            <span class="custom-icon mx-auto"><span class="icon-line-ribbon d-block"></span></span>
+            <h3>Skin Cancer Predictor</h3>
+            <p class="d-sm-block">An app to predict whether a picture of a mold is cancerous. </p>
+          </a>
+
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+  </section>
+  <!-- <div class="album py-5 bg-light">
     <div class="container">
 
       <div class="row">
@@ -157,7 +227,7 @@
 
       </div>
     </div>
-  </div>
+  </div> -->
 
 </main>
 

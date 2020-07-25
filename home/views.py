@@ -12,3 +12,7 @@ def about_view(request):
 def projects_view(request):
     template_name = "projects.html"
     return render(request, template_name)
+
+def home_view(request):
+    template_name = "home.html"
+    return render(request, template_name)
