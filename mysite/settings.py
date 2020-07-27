@@ -33,8 +33,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['anthonytapias.herokuapp.com',
-                    'anthonytapias.com',
-                    'www.anthonytapias.com']
+                    ]
 
 
 # Application definition
