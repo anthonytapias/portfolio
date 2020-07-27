@@ -18,7 +18,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATES_DIRS = os.path.join(BASE_DIR,'templates')
 
 #Activate Django-Heroku
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
 
 
 # Quick-start development settings - unsuitable for production
